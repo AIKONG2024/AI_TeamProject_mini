@@ -9,3 +9,6 @@
 
 ## 참고자료  
 - [수집 자료 스프레드시트](https://docs.google.com/spreadsheets/d/1XQSL7XE7vEa7ClrL6QE0HvvfympXhMjY8Gi1ea6FF-0/edit#gid=0)
+
+## 구글드라이브
+- [데이터셋 구글드라이브](https://drive.google.com/drive/folders/10aNY9ExEbX42mcrV_u193RmZ-bh2ZjX_)
