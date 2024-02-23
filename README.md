@@ -15,3 +15,6 @@
 
 ## 학습
 - [전이학습 진행방향 분석](https://docs.google.com/document/d/1fZCmQx-Yy6Ps7f3oj1nXdltYbQMDO_PpJEu0XQbdjBQ/edit)
+
+## yolov5 설치
+- [yolov5](https://docs.google.com/document/d/1QetkS2GMaUApdshSpBCBkILFbCgR3fGGMZpOW11XON4/edit?usp=sharing)
