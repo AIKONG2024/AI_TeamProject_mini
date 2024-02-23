@@ -12,3 +12,6 @@
 
 ## 구글드라이브
 - [데이터셋 구글드라이브](https://drive.google.com/drive/folders/10aNY9ExEbX42mcrV_u193RmZ-bh2ZjX_)
+
+## 전이학습
+- [전이학습 진행방향 분석](https://docs.google.com/document/d/1fZCmQx-Yy6Ps7f3oj1nXdltYbQMDO_PpJEu0XQbdjBQ/edit)
