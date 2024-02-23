@@ -12,3 +12,6 @@
 
 ## 구글드라이브
 - [데이터셋 구글드라이브](https://drive.google.com/drive/folders/10aNY9ExEbX42mcrV_u193RmZ-bh2ZjX_)
+
+## 깃사용법
+- [깃 사용법 문서](https://docs.google.com/document/d/1WOQQWVDUL6UGfW1pnyN0WPJaV7YPtwr7LZYEleU-Cwc/edit?usp=sharing)
