@@ -19,3 +19,6 @@
 ## yolov5 설치
 - [yolov5](https://docs.google.com/document/d/1QetkS2GMaUApdshSpBCBkILFbCgR3fGGMZpOW11XON4/edit?usp=sharing)
 - [yolov5_face_detection](https://docs.google.com/document/d/1-S8nptJG9wqGF7QrzddgbXtQTTaY3cNayol4x5FD884/edit?usp=sharing)
+
+## 깃사용법
+- [깃 사용법 문서](https://docs.google.com/document/d/1WOQQWVDUL6UGfW1pnyN0WPJaV7YPtwr7LZYEleU-Cwc/edit?usp=sharing)
