@@ -22,3 +22,6 @@
 
 ## 깃사용법
 - [깃 사용법 문서](https://docs.google.com/document/d/1WOQQWVDUL6UGfW1pnyN0WPJaV7YPtwr7LZYEleU-Cwc/edit?usp=sharing)
+
+## 이미지 증폭
+- [이미지 라벨링 및 증폭 과정](https://docs.google.com/document/d/1m-tLY_qGNnPwnw2AHSH2yEYHhZvS9sm_RI6RYLhjTBI/edit?usp=sharing)
