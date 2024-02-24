@@ -20,4 +20,6 @@
 *.json
 *.cfg
 
+*.txt
+
 /datasets
