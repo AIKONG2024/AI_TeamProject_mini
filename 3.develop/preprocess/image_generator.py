@@ -6,6 +6,10 @@ import os
 from imgaug.augmentables.bbs import BoundingBox, BoundingBoxesOnImage
 
 GENERATE_COUNT  = 5 #증폭 이미지 배수 (5배수로)
+# 이미지와 라벨 파일 경로 설정
+image_folder = "C:/miniproj_yolov5/3.develop/datasets/images/"
+images_dest_folder = "C:/miniproj_yolov5/3.develop/datasets/images_new"
+labels_dest_folder = "C:/miniproj_yolov5/3.develop/datasets/images_new"
 
 def read_yolo_format(file_path, image_shape):
     with open(file_path, 'r') as file:
@@ -42,11 +46,6 @@ seq = iaa.Sequential([
     ], random_order=True)
 ])
 
-# 이미지와 라벨 파일 경로 설정
-image_folder = "C:/miniproj_yolov5/3.develop/imgGen/images/"
-images_dest_folder = "C:/miniproj_yolov5/3.develop/imgGen/generatedImg/new"
-labels_dest_folder = "C:/miniproj_yolov5/3.develop/imgGen/generatedImg/new"
-
 # 이미지 파일 목록 가져오기
 image_files = [f for f in os.listdir(image_folder) if f.endswith('.jpg')]
 
@@ -64,7 +63,7 @@ for image_file in image_files:
 
         # 이미지 증폭
         image_aug, bbs_aug = seq(image=image, bounding_boxes=image_bbs)
-        # image_aug = bbs_aug.draw_on_image(image_aug, size=2) # 바운드박스를 이미지 내에 그림
+        # image_aug = bbs_aug.draw_on_image(image_aug, size=2) # 바운드박스를 이미지 내에 그림(테스트용)
         
         new_image_file = f"{image_file.split('.')[0]}_{i+1}.jpg"
         new_label_file = f"{image_file.replace('.jpg', '')}_{i+1}.txt"
@@ -78,3 +77,4 @@ for image_file in image_files:
                 width = (bb.x2 - bb.x1) / image_aug.shape[1]
                 height = (bb.y2 - bb.y1) / image_aug.shape[0]
                 file.write(f"{int(bb.label)} {x_center} {y_center} {width} {height}\n")
+    print("파일 저장 완료")
