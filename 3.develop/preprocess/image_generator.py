@@ -5,11 +5,11 @@ import cv2
 import os
 from imgaug.augmentables.bbs import BoundingBox, BoundingBoxesOnImage
 
-GENERATE_COUNT  = 1 #증폭 이미지 배수 (5배수로)
+GENERATE_COUNT  = 5 #증폭 이미지 배수 (5배수로)
 # 이미지와 라벨 파일 경로 설정
 image_folder = "C:/miniproj_yolov5/3.develop/datasets/images/"
-images_dest_folder = "C:/miniproj_yolov5/3.develop/datasets/test"
-labels_dest_folder = "C:/miniproj_yolov5/3.develop/datasets/test"
+images_dest_folder = "C:/miniproj_yolov5/3.develop/datasets/images_new/"
+labels_dest_folder = "C:/miniproj_yolov5/3.develop/datasets/images_new/"
 
 def read_yolo_format(file_path, image_shape):
     with open(file_path, 'r') as file:
@@ -26,24 +26,24 @@ def read_yolo_format(file_path, image_shape):
 
 # 증폭 정책 설정
 seq = iaa.Sequential([
-    # iaa.SomeOf((0, 8), [
-    #     iaa.Affine(rotate=(-25, 25), scale=(0.8, 1.2)),
-    #     iaa.Fliplr(0.5),
-    #     iaa.Sometimes(
-    #         0.5,
-    #         iaa.GaussianBlur(sigma=(0, 0.5))),
-    #     iaa.AdditiveGaussianNoise(loc=0, scale=(0.0, 0.05*255), per_channel=0.5),
-    #     iaa.Multiply((0.8, 1.2)),
-    #     iaa.LinearContrast((0.8, 1.3)),
-    #     iaa.Crop(percent=(0, 0.1)),
-    #     iaa.Pad(percent=(0, 0.1), pad_mode="edge"),
-    #     iaa.Affine(
-    #     scale={"x": (0.8, 1.2), "y": (0.8, 1.2)},
-    #     translate_percent={"x": (-0.2, 0.2), "y": (-0.2, 0.2)},
-    #     rotate=(-25, 25),
-    #     shear=(-8, 8)
-    #     )
-    # ], random_order=True)
+    iaa.SomeOf((0, 8), [
+        iaa.Affine(rotate=(-25, 25), scale=(0.8, 1.2)),
+        iaa.Fliplr(0.5),
+        iaa.Sometimes(
+            0.5,
+            iaa.GaussianBlur(sigma=(0, 0.5))),
+        iaa.AdditiveGaussianNoise(loc=0, scale=(0.0, 0.05*255), per_channel=0.5),
+        iaa.Multiply((0.8, 1.2)),
+        iaa.LinearContrast((0.8, 1.3)),
+        iaa.Crop(percent=(0, 0.1)),
+        iaa.Pad(percent=(0, 0.1), pad_mode="edge"),
+        iaa.Affine(
+        scale={"x": (0.8, 1.2), "y": (0.8, 1.2)},
+        translate_percent={"x": (-0.2, 0.2), "y": (-0.2, 0.2)},
+        rotate=(-25, 25),
+        shear=(-8, 8)
+        )
+    ], random_order=True)
 ])
 
 # 이미지 파일 목록 가져오기
@@ -63,7 +63,7 @@ for image_file in image_files:
 
         # 이미지 증폭
         image_aug, bbs_aug = seq(image=image, bounding_boxes=image_bbs)
-        image_aug = bbs_aug.draw_on_image(image_aug, size=2) # 바운드박스를 이미지 내에 그림(테스트용)
+        # image_aug = bbs_aug.draw_on_image(image_aug, size=2) # 바운드박스를 이미지 내에 그림(테스트용)
         
         new_image_file = f"{image_file.split('.')[0]}_{i+1}.jpg"
         new_label_file = f"{image_file.replace('.jpg', '')}_{i+1}.txt"
