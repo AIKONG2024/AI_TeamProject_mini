@@ -1,4 +1,4 @@
-# YOLOv5 🚀 by Ultralytics, AGPL-3.0 license
+# YOLOv5   by Ultralytics, AGPL-3.0 license
 
 name: Greetings
 
@@ -16,14 +16,14 @@ jobs:
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           pr-message: |
-            👋 Hello @${{ github.actor }}, thank you for submitting a YOLOv5 🚀 PR! To allow your work to be integrated as seamlessly as possible, we advise you to:
+            👋 Hello @${{ github.actor }}, thank you for submitting a YOLOv5   PR! To allow your work to be integrated as seamlessly as possible, we advise you to:
 
             - ✅ Verify your PR is **up-to-date** with `ultralytics/yolov5` `master` branch. If your PR is behind you can update your code by clicking the 'Update branch' button or by running `git pull` and `git merge master` locally.
             - ✅ Verify all YOLOv5 Continuous Integration (CI) **checks are passing**.
             - ✅ Reduce changes to the absolute **minimum** required for your bug fix or feature addition. _"It is not daily increase but daily decrease, hack away the unessential. The closer to the source, the less wastage there is."_  — Bruce Lee
 
           issue-message: |
-            👋 Hello @${{ github.actor }}, thank you for your interest in YOLOv5 🚀! Please visit our ⭐️ [Tutorials](https://docs.ultralytics.com/yolov5/) to get started, where you can find quickstart guides for simple tasks like [Custom Data Training](https://docs.ultralytics.com/yolov5/tutorials/train_custom_data/) all the way to advanced concepts like [Hyperparameter Evolution](https://docs.ultralytics.com/yolov5/tutorials/hyperparameter_evolution/).
+            👋 Hello @${{ github.actor }}, thank you for your interest in YOLOv5  ! Please visit our ⭐️ [Tutorials](https://docs.ultralytics.com/yolov5/) to get started, where you can find quickstart guides for simple tasks like [Custom Data Training](https://docs.ultralytics.com/yolov5/tutorials/train_custom_data/) all the way to advanced concepts like [Hyperparameter Evolution](https://docs.ultralytics.com/yolov5/tutorials/hyperparameter_evolution/).
 
             If this is a 🐛 Bug Report, please provide a **minimum reproducible example** to help us debug it.
 
@@ -53,9 +53,9 @@ jobs:
 
             If this badge is green, all [YOLOv5 GitHub Actions](https://github.com/ultralytics/yolov5/actions) Continuous Integration (CI) tests are currently passing. CI tests verify correct operation of YOLOv5 [training](https://github.com/ultralytics/yolov5/blob/master/train.py), [validation](https://github.com/ultralytics/yolov5/blob/master/val.py), [inference](https://github.com/ultralytics/yolov5/blob/master/detect.py), [export](https://github.com/ultralytics/yolov5/blob/master/export.py) and [benchmarks](https://github.com/ultralytics/yolov5/blob/master/benchmarks.py) on macOS, Windows, and Ubuntu every 24 hours and on every commit.
 
-            ## Introducing YOLOv8 🚀
+            ## Introducing YOLOv8  
 
-            We're excited to announce the launch of our latest state-of-the-art (SOTA) object detection model for 2023 - [YOLOv8](https://github.com/ultralytics/ultralytics) 🚀!
+            We're excited to announce the launch of our latest state-of-the-art (SOTA) object detection model for 2023 - [YOLOv8](https://github.com/ultralytics/ultralytics)  !
 
             Designed to be fast, accurate, and easy to use, YOLOv8 is an ideal choice for a wide range of object detection, image segmentation and image classification tasks. With YOLOv8, you'll be able to quickly and accurately detect objects in real-time, streamline your workflows, and achieve new levels of accuracy in your projects.
 
