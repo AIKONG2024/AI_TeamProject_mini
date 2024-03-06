@@ -1,4 +1,4 @@
-# YOLOv5 🚀 by Ultralytics, AGPL-3.0 license
+# YOLOv5   by Ultralytics, AGPL-3.0 license
 """Plotting utils."""
 
 import contextlib
@@ -26,7 +26,9 @@ from utils.metrics import fitness
 RANK = int(os.getenv("RANK", -1))
 matplotlib.rc("font", **{"size": 11})
 matplotlib.use("Agg")  # for writing to files only
-
+import matplotlib.pyplot as plt
+plt.rcParams['font.family'] ='Malgun Gothic'
+plt.rcParams['axes.unicode_minus'] =False
 
 class Colors:
     # Ultralytics color palette https://ultralytics.com/

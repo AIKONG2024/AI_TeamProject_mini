@@ -1,4 +1,4 @@
-# YOLOv5 🚀 by Ultralytics, AGPL-3.0 license
+# YOLOv5   by Ultralytics, AGPL-3.0 license
 """Image augmentation functions."""
 
 import math

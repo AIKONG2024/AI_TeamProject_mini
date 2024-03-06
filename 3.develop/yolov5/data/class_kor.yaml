@@ -10,12 +10,13 @@
 # download: bash data/scripts/get_voc.sh
 
 # train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
-train: ../datasets/class/train  # 16551 images
-val: ../datasets/class/valid  # 16551 images
+path: ../datasets/class3
+train: images/train  # 16551 images
+val: images/valid  # 16551 images
 # test: ../datasets/class_kor/test  # 4952 images
 
 # number of classes
-# nc: 13
+nc: 13
 
 # class names
 names: 
@@ -32,3 +33,4 @@ names:
       10: ±èÀ¯Ã¶
       11: ÀÌÅÂ±Ô
       12: À±¿µÇö
+

@@ -8,8 +8,8 @@ from imgaug.augmentables.bbs import BoundingBox, BoundingBoxesOnImage
 GENERATE_COUNT  = 5 #증폭 이미지 배수 (5배수로)
 # 이미지와 라벨 파일 경로 설정
 image_folder = "C:/miniproj_yolov5/3.develop/datasets/images/"
-images_dest_folder = "C:/miniproj_yolov5/3.develop/datasets/images_new"
-labels_dest_folder = "C:/miniproj_yolov5/3.develop/datasets/images_new"
+images_dest_folder = "C:/miniproj_yolov5/3.develop/datasets/images_new/"
+labels_dest_folder = "C:/miniproj_yolov5/3.develop/datasets/images_new/"
 
 def read_yolo_format(file_path, image_shape):
     with open(file_path, 'r') as file:
@@ -77,4 +77,4 @@ for image_file in image_files:
                 width = (bb.x2 - bb.x1) / image_aug.shape[1]
                 height = (bb.y2 - bb.y1) / image_aug.shape[0]
                 file.write(f"{int(bb.label)} {x_center} {y_center} {width} {height}\n")
-    print("파일 저장 완료")
+print("파일 저장 완료")

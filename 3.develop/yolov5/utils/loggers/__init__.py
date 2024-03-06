@@ -1,4 +1,4 @@
-# YOLOv5 🚀 by Ultralytics, AGPL-3.0 license
+# YOLOv5   by Ultralytics, AGPL-3.0 license
 """Logging utils."""
 import json
 import os
@@ -105,7 +105,7 @@ class Loggers:
         # Messages
         if not comet_ml:
             prefix = colorstr("Comet: ")
-            s = f"{prefix}run 'pip install comet_ml' to automatically track and visualize YOLOv5 🚀 runs in Comet"
+            s = f"{prefix}run 'pip install comet_ml' to automatically track and visualize YOLOv5   runs in Comet"
             self.logger.info(s)
         # TensorBoard
         s = self.save_dir
