@@ -27,4 +27,4 @@
 - [이미지 라벨링 및 증폭 과정](https://docs.google.com/document/d/1m-tLY_qGNnPwnw2AHSH2yEYHhZvS9sm_RI6RYLhjTBI/edit?usp=sharing)
 
 ## 훈련 및 분석 자동화
-- [문서](https://docs.google.com/document/d/10eQ4G192siywS3Tfnf7siDh621MMtS2T66gfKSKiQCQ/edit?usp=sharing)
+- [분석 방식 및 자동 실행 코드](https://docs.google.com/document/d/10eQ4G192siywS3Tfnf7siDh621MMtS2T66gfKSKiQCQ/edit?usp=sharing)
