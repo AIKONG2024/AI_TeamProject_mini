@@ -22,5 +22,6 @@
 
 *.txt
 *.zip
+*.comet.config
 
 datasets

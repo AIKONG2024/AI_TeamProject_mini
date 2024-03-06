@@ -5,7 +5,7 @@ batch_sizes = [16, 32]
 epoch_numbers = [100, 200, 300]
 pretrained_w = "face_detection_yolov5s.pt"
 datasets_yaml = "class_kor.yaml"
-cfg_models = ["yolov5s.yaml"]
+cfg_models = ["yolov5m.yaml"]
 path = "train.py"
 
 
