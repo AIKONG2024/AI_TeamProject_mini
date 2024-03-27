@@ -28,3 +28,6 @@
 
 ## 훈련 및 분석 자동화
 - [comet_ml 연동 및 자동 실행 코드](https://docs.google.com/document/d/10eQ4G192siywS3Tfnf7siDh621MMtS2T66gfKSKiQCQ/edit?usp=sharing)
+
+## 발표 자료
+- [PDF](https://drive.google.com/file/d/192RceEcitTrzlfIaswORDY4bi1gMdCZm/view)
